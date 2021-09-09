@@ -1,0 +1,54 @@
+body {
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 40px;
+}
+
+main > div:first-child {
+    margin: 0 auto 30px;
+    min-width: 300px;  
+}
+
+main > div:last-child {
+    flex: 1;
+}
+
+
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    z-index: 50;
+}
+
+@media screen and (min-width: 700px){
+    main {
+        flex-direction: row;
+    }
+    main > div:first-child {
+        margin-right: 20px;
+    }
+}
+
+/* Turn off number input spinners: */
+
+    /* Chrome, Safari, Edge, Opera */
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    }
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+
+
